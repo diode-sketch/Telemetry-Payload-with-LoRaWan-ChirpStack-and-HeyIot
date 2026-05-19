@@ -4,6 +4,16 @@ It uses an integration on google apps script and HeyIot for sending data. Credit
 <img width="1839" height="691" alt="image" src="https://github.com/user-attachments/assets/63e1cbfc-2b32-4ecb-91aa-a8687d90ba74" />
 The HeyIot console processing data.
 
+Why did we do this project?
+
+This project was created to better understand how real-world LoRaWAN telemetry systems operate beyond simple isolated examples. While many tutorials explain individual components, we wanted to build and document a complete workflow involving telemetry payload encoding, ChirpStack integration, and cloud visualization through HeyIot.
+
+Our goal was not only to make the system work, but also to learn how devices, gateways, network servers, and dashboards interact inside a real LoRaWAN infrastructure.
+
+During development, we faced challenges involving payload decoding, communication reliability, platform interoperability, and high-altitude telemetry transmission. Through continuous testing and debugging, we eventually managed to enable airborne 1G mode and maintain telemetry communication during flights exceeding 30,000 meters in altitude.
+
+This repository is open source because we believe practical experimentation and accessible documentation are some of the best ways to learn embedded systems and IoT technologies. We hope this project can help other students, makers, and developers better understand LoRaWAN telemetry workflows and encourage further experimentation within the open-source community.
+
 There is a video on the repo on how to use the HeyIot Console, although im not very skilled at video editing.
 
 We did this for the Asgard@SpacePole launch experiment (https://www.facebook.com/groups/153214554744003/). It was a mind-bending experience. My thanks to Erik de Schrijver for coordinating it all! We received not only the chance to deploy our payloads, but to learn how a scientist's life is from people who actually are so.
