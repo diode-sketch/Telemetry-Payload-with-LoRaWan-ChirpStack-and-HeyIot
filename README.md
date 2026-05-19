@@ -6,9 +6,6 @@ The HeyIot console processing data.
 
 There is a video on the repo on how to use the HeyIot Console, although im not very skilled at video editing.
 
-<img width="1571" height="525" alt="image" src="https://github.com/user-attachments/assets/2ea6d03a-91ee-48b2-83e4-06ea5fc75221" />
-The google sheet file receiving and updating live data.
-
 We did this for the Asgard@SpacePole launch experiment (https://www.facebook.com/groups/153214554744003/). It was a mind-bending experience. My thanks to Erik de Schrijver for coordinating it all! We received not only the chance to deploy our payloads, but to learn how a scientist's life is from people who actually are so.
 Wonderful experience!
 
