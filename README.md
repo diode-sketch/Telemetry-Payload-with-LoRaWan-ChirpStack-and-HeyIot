@@ -27,3 +27,15 @@ The trajectory our payload went through while providing live data represented on
 This is our payload.
 
 Link to the official, shared google earth file: https://earth.google.com/web/@51.03485204,3.9858575,9.3073728a,141273.48611511d,35y,43.86148354h,60.65201582t,-0r/data=CgRCAggBMikKJwolCiExaDhtdmx1QWF4NzFrUW91cER5OUxkYUhoSDdEU2dEVnIgAToDCgEwQgIIAEoHCM2w0zUQAQ?authuser=0
+
+What did we learn?
+
+One of the most important lessons we learned throughout this project was that real engineering rarely works perfectly on the first attempt. Many parts of the system required repeated testing, debugging, and redesign before achieving stable telemetry communication.
+
+We also gained a much deeper understanding of how LoRaWAN infrastructure operates as a complete ecosystem rather than as isolated components. Working with payload encoding, ChirpStack integration, cloud dashboards, and telemetry visualization helped us understand how devices, gateways, and servers communicate in real-world conditions.
+
+Another important aspect of the project was learning how critical documentation and open-source collaboration are within technical communities. Reading repositories, analyzing examples, and studying existing implementations allowed us to solve problems that initially seemed beyond our level of experience.
+
+The project also strengthened our ability to work collaboratively under technical constraints. Dividing tasks, troubleshooting issues together, and testing different approaches taught us the importance of communication and teamwork in engineering projects.
+
+Finally, adapting the system for high-altitude operation and successfully maintaining telemetry communication above 30,000 meters showed us how experimentation and persistence can transform theoretical knowledge into practical results.
