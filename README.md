@@ -13,6 +13,7 @@ Wonderful experience, and even better thanks to my incredible colleagues!
 The trajectory our payload went through while providing live data represented on Google Earth
 
 <img width="648" height="611" alt="image" src="https://github.com/user-attachments/assets/d43ee427-2057-409f-87a0-53ea348f372a" />
+
 This is our payload.
 
 Link to the official, shared google earth file: https://earth.google.com/web/@51.03485204,3.9858575,9.3073728a,141273.48611511d,35y,43.86148354h,60.65201582t,-0r/data=CgRCAggBMikKJwolCiExaDhtdmx1QWF4NzFrUW91cER5OUxkYUhoSDdEU2dEVnIgAToDCgEwQgIIAEoHCM2w0zUQAQ?authuser=0
