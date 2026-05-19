@@ -1,5 +1,5 @@
 const SHEET_NAME = "Hoja1";
-
+//Automatic posting on google sheet 'Hoja1'. Sheet must be named like that.
 function doPost(e) {
   try {
 
@@ -75,6 +75,7 @@ function doPost(e) {
       .setMimeType(ContentService.MimeType.JSON);
   }
 }
+//Simulate a post event to test the system capabilities.
 function testDoPost() {
   const fakeEvent = {
     postData: {
