@@ -6,7 +6,7 @@ The HeyIot console processing data.
 
 Why did we do this project?
 
-This project was created to better understand how real-world LoRaWAN telemetry systems operate beyond simple isolated examples. While many tutorials explain individual components, we wanted to build and document a complete workflow involving telemetry payload encoding, ChirpStack integration, and cloud visualization through HeyIot.
+This project was created to better understand how real-world LoRaWAN telemetry systems operate beyond simple isolated examples. While many tutorials explain individual components, we wanted to build and document a complete workflow involving telemetry payload encoding, ChirpStack integration, and cloud visualization through HeyIot and Google Apps Script.
 
 Our goal was not only to make the system work, but also to learn how devices, gateways, network servers, and dashboards interact inside a real LoRaWAN infrastructure.
 
