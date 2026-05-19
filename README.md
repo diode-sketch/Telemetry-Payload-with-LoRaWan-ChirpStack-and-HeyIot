@@ -1,6 +1,6 @@
 # Telemetry-Payload-with-LoRaWan-for-Asgard-SpacePole
 Cpp tool to allow a payload to reach airborne mode 1g (up to 50,000m - 164,000ft) ensuring constant telemetry signals and automatic post on a google sheet.
-It uses an integration on google apps script and HeyIot for sending data.
+It uses an integration on google apps script and HeyIot for sending data. Credit for this is given to beegee-tokio (bernd.giesecke@rakwireless.com) for his repo Wisblock API v-2
 <img width="1839" height="691" alt="image" src="https://github.com/user-attachments/assets/63e1cbfc-2b32-4ecb-91aa-a8687d90ba74" />
 The HeyIot console processing data.
 
