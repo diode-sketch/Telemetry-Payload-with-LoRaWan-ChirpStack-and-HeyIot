@@ -55,36 +55,34 @@ bool init_acc(void)
 	// Sending a packet on movement.
 	//************************************************************************/
 	// // Enable interrupts
-	// data_to_write |= 0x20;                   //Z high
-	// data_to_write |= 0x08;                   //Y high
-	// data_to_write |= 0x02;                   //X high
-	// acc_sensor.writeRegister(LIS3DH_INT1_CFG, data_to_write); // Enable interrupts on high tresholds for x, y and z
+	 data_to_write |= 0x20;                   //Z high
+	 data_to_write |= 0x08;                   //Y high
+	 data_to_write |= 0x02;                   //X high
+	 acc_sensor.writeRegister(LIS3DH_INT1_CFG, data_to_write); // Enable interrupts on high tresholds for x, y and z
 
 	// // Set interrupt trigger range
-	// data_to_write = 0;
-	// // data_to_write |= 0x10;                    // 1/8 range
-	// // acc_sensor.writeRegister(LIS3DH_INT1_THS, data_to_write); // 1/8th range
-	// data_to_write |= 0x08;                   // 1/16 range
-	// acc_sensor.writeRegister(LIS3DH_INT1_THS, data_to_write); // 1/16th range
+	 data_to_write = 0;
+	 data_to_write |= 0x40;                    // 1/8 range
+	 acc_sensor.writeRegister(LIS3DH_INT1_THS, data_to_write); // 1/8th range
 
 	// // Set interrupt signal length
-	// data_to_write = 0;
-	// data_to_write |= 0x01; // 1 * 1/50 s = 20ms
-	// acc_sensor.writeRegister(LIS3DH_INT1_DURATION, data_to_write);
+	 data_to_write = 0;
+	 data_to_write |= 0x01; // 1 * 1/50 s = 20ms
+	 acc_sensor.writeRegister(LIS3DH_INT1_DURATION, data_to_write);
 
-	// acc_sensor.readRegister(&data_to_write, LIS3DH_CTRL_REG5);
-	// data_to_write &= 0xF3;                    //Clear bits of interest
-	// data_to_write |= 0x08;                    //Latch interrupt (Cleared by reading int1_src)
-	// acc_sensor.writeRegister(LIS3DH_CTRL_REG5, data_to_write); // Set interrupt to latching
+	 acc_sensor.readRegister(&data_to_write, LIS3DH_CTRL_REG5);
+	 data_to_write &= 0xF3;                    //Clear bits of interest
+	 data_to_write |= 0x08;                    //Latch interrupt (Cleared by reading int1_src)
+	 acc_sensor.writeRegister(LIS3DH_CTRL_REG5, data_to_write); // Set interrupt to latching
 
-	// // Select interrupt pin 1
-	// data_to_write = 0;
-	// data_to_write |= 0x40; //AOI1 event (Generator 1 interrupt on pin 1)
-	// data_to_write |= 0x20; //AOI2 event ()
-	// acc_sensor.writeRegister(LIS3DH_CTRL_REG3, data_to_write);
+	// Select interrupt pin 1
+	 data_to_write = 0;
+	 data_to_write |= 0x40; //AOI1 event (Generator 1 interrupt on pin 1)
+	 data_to_write |= 0x20; //AOI2 event ()
+	 acc_sensor.writeRegister(LIS3DH_CTRL_REG3, data_to_write);
 
 	// // No interrupt on pin 2
-	// acc_sensor.writeRegister(LIS3DH_CTRL_REG6, 0x00);
+	 acc_sensor.writeRegister(LIS3DH_CTRL_REG6, 0x00);
 
 	// Enable high pass filter
 	acc_sensor.writeRegister(LIS3DH_CTRL_REG2, 0x01);
@@ -106,10 +104,10 @@ bool init_acc(void)
 	// Below functions can be used to enable the ACC's IRQ and trigger
 	// Sending a packet on movement.
 	//************************************************************************/
-	// clear_acc_int();
+	 clear_acc_int();
 
 	// // Set the interrupt callback function
-	// attachInterrupt(INT1_PIN, acc_int_callback, RISING);
+	 attachInterrupt(INT1_PIN, acc_int_callback, RISING);
 
 	read_acc();
 
